@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
+    <link rel="stylesheet" href="style.css" />
     <title>Cats at Our Shelter</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Banner-container -->
 
-    <header>
-        <h1>Welcome to Our Cat Shelter!</h1>
+    <div class="banner-container">
+      <header>
+        <!-- Logo -->
 
-        <!-- Search Bar -->
-        <form action="search_results_page.html" method="get">
-            <input type="text" id="search" name="search" placeholder="Search cats...">
-            <input type="submit" value="Search">
-        </form>
-
+        <div class="logo">
+          <h2>Animal Shelter</h2>
+        </div>
         <!-- Navigation Menu -->
         <nav>
-            <ul>
-                <li><a href="siamese.html">Siamese</a></li>
-                <li><a href="persian.html">Persian</a></li>
-                <li><a href="maine_coon.html">Maine Coon</a></li>
-                <li><a href="ragdoll.html">Ragdoll</a></li>
-                <li><a href="bengal.html">Bengal</a></li>
-                <li><a href="sphynx.html">Sphynx</a></li>
-                <li><a href="all_cats.html">All</a></li>
-            </ul>
+          <ul>
+            <li><a href="siamese.html">Siamese</a></li>
+            <li><a href="persian.html">Persian</a></li>
+            <li><a href="maine_coon.html">Maine Coon</a></li>
+            <li><a href="ragdoll.html">Ragdoll</a></li>
+            <li><a href="bengal.html">Bengal</a></li>
+            <li><a href="sphynx.html">Sphynx</a></li>
+            <li><a href="all_cats.html">All</a></li>
+          </ul>
         </nav>
-    </header>
+        <!-- Search Bar -->
+        <form action="search_results_page.html" method="get">
+          <input type="text" id="search" name="search" placeholder="Search" />
+          <button>search</button>
+        </form>
+      </header>
+    </div>
 
     <main>
-        <section>
-            <p>Meet some of our adorable cats looking for a forever home:</p>
+      <section>
+        <h1>Welcome to Our Cat Shelter!</h1>
+        <p>Meet some of our adorable cats looking for a forever home:</p>
 
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Breed</th>
-                </tr>
-                <tr>
-                    <td>Whiskers</td>
-                    <td>2 years</td>
-                    <td>Siamese</td>
-                </tr>
-                <tr>
-                    <td>Fluffy</td>
-                    <td>1 year</td>
-                    <td>Persian</td>
-                </tr>
-                <tr>
-                    <td>Shadow</td>
-                    <td>3 years</td>
-                    <td>Maine Coon</td>
-                </tr>
-            </table>
-        </section>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Breed</th>
+          </tr>
+          <tr>
+            <td>Whiskers</td>
+            <td>2 years</td>
+            <td>Siamese</td>
+          </tr>
+          <tr>
+            <td>Fluffy</td>
+            <td>1 year</td>
+            <td>Persian</td>
+          </tr>
+          <tr>
+            <td>Shadow</td>
+            <td>3 years</td>
+            <td>Maine Coon</td>
+          </tr>
+        </table>
+      </section>
 
-        <section>
-            <h2>Contact Us</h2>
+      <section>
+        <h2>Contact Us</h2>
 
-            <p>If you're interested in adopting, or if you have any questions, please contact us:</p>
+        <p>
+          If you're interested in adopting, or if you have any questions, please
+          contact us:
+        </p>
 
-            <form action="submit_form_destination.html" method="post">
-                <label for="name">Your Name:</label><br>
-                <input type="text" id="name" name="name"><br>
+        <form action="submit_form_destination.html" method="post">
+          <label for="name">Your Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
 
-                <label for="email">Your Email:</label><br>
-                <input type="email" id="email" name="email"><br>
+          <label for="email">Your Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message"></textarea><br>
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message"></textarea><br />
 
-                <input type="submit" value="Send">
-            </form>
-        </section>
+          <input type="submit" value="Send" />
+        </form>
+      </section>
     </main>
-
-</body>
-
+  </body>
 </html>
