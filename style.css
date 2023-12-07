@@ -1,16 +1,32 @@
+/*
+Color palette:
+
+#223333 very dark green (for background)
+#386641 dark green
+#6a994e green
+#a7c957 light green
+#f2e8cf beige (for text & contrast)
+#bc4749 red (for contrast)
+
+*/
+
+
+
 body {
+  font-family: 'Roboto', sans-serif;
   width: 100%;
-  background: #233;
-  color: #fff;
+  background: #223333;
+  color: #f2e8cf;
   font-size: 13px;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #fff;
+  color: #f2e8cf;
   text-decoration: none;
 }
+
 h2,
 li,
 ul {
@@ -21,6 +37,7 @@ ul {
 ul {
   list-style: none;
 }
+
 /* <!-- .banner-container--> */
 
 .banner-container {
@@ -34,7 +51,7 @@ ul {
 /* <!-- Header--> */
 
 header {
-  background: #333;
+  background: #223333;
   border-radius: 7px;
   padding: 20px;
   display: flex;
@@ -50,7 +67,8 @@ header {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  border: 1px solid green;
+  border: 1px solid #bc4749;
+  background-color: #6a994e;
 }
 
 nav ul {
@@ -59,6 +77,34 @@ nav ul {
   align-items: center;
   justify-content: space-around;
 }
+
+/* <!-- Main--> */
+
+main {
+  margin: 2.5% 5%;
+}
+
+/*Need to watch next chapter (Flexbox?) to better style the divs... 3 in each raw, equal height, etc...*/
+.cats div {
+  background-color: #f2e8cf;
+  color: #bc4749;
+  width: 30%;
+  margin: calc((10%)/6);
+  padding: 1em 2em;
+  display: inline-block;
+
+}
+
+.cats img {
+  width: 100%;
+  border-radius: 2em;
+}
+
+.cats p {
+  margin: 0;
+}
+
+/* <!-- Contact Form--> */
 
 form input {
   outline: none;
@@ -69,7 +115,7 @@ form input {
 }
 
 form button {
-  background: green;
+  background: #bc4749;
   border-radius: 20px;
   border: none;
   outline: none;
