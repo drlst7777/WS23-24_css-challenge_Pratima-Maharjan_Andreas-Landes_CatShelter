@@ -44,7 +44,7 @@
   <main>
     <section class="cats">
       <h1>Welcome to Our Cat Shelter!</h1>
-      <p>Meet some of our adorable cats looking for a forever home:</p>
+      <p id="intro">Meet some of our adorable cats looking for a forever home:</p>
       <div>
         <img
           src="https://petkeen.com/wp-content/uploads/2022/05/Beautiful-persian-cream-colorpoint-cat-whith-blue-eyes_Dorottya-Mathe_shutterstock.jpg"
@@ -130,25 +130,28 @@
     </section>
 
     <section>
-      <h2>Contact Us</h2>
+      <div class="form_wrapper">
+        <h2>Contact Us</h2>
 
-      <p>
-        If you're interested in adopting, or if you have any questions, please
-        contact us:
-      </p>
+        <p>
+          If you're interested in adopting, or if you have any questions, please
+          contact us:
+        </p>
+        <div>
+          <form action="submit_form_destination.html" method="post">
+            <label for="name">Your Name:</label><br />
+            <input type="text" id="name" name="name" /><br />
 
-      <form action="submit_form_destination.html" method="post">
-        <label for="name">Your Name:</label><br />
-        <input type="text" id="name" name="name" /><br />
+            <label for="email">Your Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
 
-        <label for="email">Your Email:</label><br />
-        <input type="email" id="email" name="email" /><br />
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message"></textarea><br />
 
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message"></textarea><br />
-
-        <input type="submit" value="Send" />
-      </form>
+            <input class="submit_button" type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 </body>
